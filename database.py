@@ -1,5 +1,5 @@
 import sqlite3
-#
+#my db
 create_beans_table='create table if not exists beans(id integer primary key,name text not null,method text not null,rating integer not null)'
 insert_beans="insert into beans(name,method,rating) values(%s,%s,%s);"
 get_all_Beans="select * from beans order by rating desc" #limit 1;
